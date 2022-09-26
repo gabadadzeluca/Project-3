@@ -1,0 +1,57 @@
+textarea {
+  min-height: 400px;
+}
+
+.email-class {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: lightblue;
+  width: 80%;
+  border-radius: 5px;
+}
+.email-class .time-class, .email-class .sender-class, .email-class .subject-class {
+  margin: 0 10px;
+  opacity: 70%;
+}
+
+.email-class, img {
+  display: inline-flex;
+}
+
+img {
+  margin-left: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.single-email-view {
+  font-weight: 500;
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.single-email-view .body-class {
+  border: 1px dotted black;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: lightgray;
+}
+.single-email-view .subject-class, .single-email-view .sender-class {
+  margin: 5px 0;
+}
+
+#reply-btn {
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: white;
+}
+
+#submit-btn {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
