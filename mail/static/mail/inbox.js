@@ -56,10 +56,11 @@ function save_email(){
   .then(response => response.json)
   .then(result=>{
     console.log(result)
+    load_mailbox('sent');
   })
     
   localStorage.clear();
-  load_mailbox('sent');
+  
 
   return false;
 }
@@ -71,9 +72,7 @@ function read_email(mailbox){
   .then(response => response.json())
   .then(emails => {
     console.log(emails)
-    if(emails.lenght <=1 ){
-      alert('yes')
-    }
+    
     // For every email make a separate div with divs inside and display the email info
     emails.forEach(email => {
       //if(email.archived == false){}
